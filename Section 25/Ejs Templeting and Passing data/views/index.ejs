@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FName & LName</title>
+</head>
+<body>
+    <% if(locals.length)  
+    {  %>
+        <h1><%= length %></h1>
+    <% }
+    else
+    { %>
+        <h1><%= title %></h1>
+    <%  } %>
+    
+   
+    <form action="/submit" method="post">
+        <input type="text" placeholder="First Name" name="fName">
+        <input type="text" placeholder="Last Name" name="lName">
+        <button type="submit" value="OK">Submit</button>
+    </form>
+</body>
+</html>

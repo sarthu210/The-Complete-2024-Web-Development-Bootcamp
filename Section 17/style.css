@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body{
+    background-color: #FFDD53;
+}
+
+h1{
+    font-family: 'Dancing Script', cursive;
+}
+
+h2{
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    margin-bottom: 10px;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.player{
+    padding-top: 100px;
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 75px 400px;
+    margin: auto;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+img{
+    height: 400px;
+    width: 400px;
+}
+
+.btn{
+    grid-column: span 2;
+}
+
+button{
+    margin: auto;
+    height: 50px;
+    width: 150px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Dancing Script', cursive;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+
+footer{
+    margin-top: 100px;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+@media(max-width:910px){
+    img{
+        height: 300px;
+        width: 300px;
+    }
+    .player{
+        padding-top: 80px;
+        display: grid;
+        grid-template-columns: 350px;
+        grid-template-rows: 50px 400px 50px 400px 60px;
+        margin: auto;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .p1{
+        grid-row: 1;
+    }
+    .p2{
+        grid-row: 3;
+    }
+    .btn{
+        grid-row: 5;
+        grid-column: 1;
+    }
+
+}

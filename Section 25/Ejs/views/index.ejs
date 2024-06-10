@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekend Render</title>
+</head>
+<body>
+    <h1><%= title %></h1>
+    <p>Seconds are, <%= sec %></p>
+    <ul>
+        
+        <%  if(sec%2==0)
+            {
+                for(let i=0;i<itemList.length;i++)
+                {
+        %>
+        <li>
+            <%= itemList[i]  %>
+            <% }
+        }
+            else{
+         %>
+         <%-  empty %>
+         <% } %>
+            
+            
+        </li>
+        
+    </ul>
+    <%- htmlc %>
+    <%- include("footer.ejs") %>
+</body>
+</html>

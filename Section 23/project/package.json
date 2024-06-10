@@ -1,0 +1,16 @@
+{
+  "name": "qr_code_generator",
+  "version": "1.0.0",
+  "description": "generating the qr code on the bases of provided url",
+  "main": "qr_gen.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sarthak",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^9.2.12",
+    "qr-image": "^3.2.0"
+  }
+}

@@ -1,0 +1,8 @@
+@media(max-width:500px){
+    .i1{
+        display: absolute;
+        padding-left: 50px;
+        margin-left: -50px;
+        transform: rotate(30deg);
+    }
+}
